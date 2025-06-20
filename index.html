@@ -130,37 +130,54 @@
             </div>
         </section>
 
+        
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Richiedi preventivo</h2>
                 <p class="section-subtitle">Compila il form e ti contatteremo entro 24 ore</p>
                 <form>
                     <div class="form-group">
-                        <input type="text" placeholder="Nome" required>
+                        <label for="nome">Nome completo*</label>
+                        <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required>
+                        <span class="hint">Come ti possiamo chiamare?</span>
                     </div>
+
                     <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="tuo@email.com" required>
+                        <span class="hint">Per inviarti il preventivo</span>
                     </div>
+
                     <div class="form-group">
-                        <input type="tel" placeholder="Telefono" required>
+                        <label for="telefono">Telefono*</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+39 012 345 6789" required>
+                        <span class="hint">Per contattarti rapidamente</span>
                     </div>
+
                     <div class="form-group">
-                        <select required>
-                            <option value="" disabled selected>Seleziona servizio</option>
+                        <label for="servizio">Tipo di servizio*</label>
+                        <select id="servizio" name="servizio" required>
+                            <option value="" disabled selected>-- Seleziona --</option>
                             <option value="basic">Pulizia Basic (€45)</option>
                             <option value="completo">Pulizia Completa (€70)</option>
                             <option value="premium">Pulizia Premium</option>
-                            <option value="regolare">Pulizia Regolare</option>
+                            <option value="regolare">Abbonamento Pulizia Regolare</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <textarea placeholder="Note aggiuntive" required></textarea>
+                        <label for="note">Note aggiuntive</label>
+                        <textarea id="note" name="note" placeholder="Dettagli sulla tua casa, preferenze particolari..."></textarea>
+                        <span class="hint">Metratura, animali domestici, allergie, ecc.</span>
                     </div>
-                    <button type="submit" class="btn">Invia richiesta</button>
+
+                    <div class="form-footer">
+                        <p class="required-fields">* Campi obbligatori</p>
+                        <button type="submit" class="btn">Invia richiesta <i class="fas fa-paper-plane"></i></button>
+                    </div>
                 </form>
             </div>
-        </section>
-
+        </section>      
         <section class="testimonials">
             <div class="container">
                 <h2>Cosa dicono i nostri clienti</h2>
