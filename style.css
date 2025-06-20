@@ -541,3 +541,38 @@ nav ul.show {
         display: flex !important;
     }
 }
+
+/* adding new style css for the form */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.form-group .hint {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--cinza-escuro);
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.required-fields {
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--cinza-escuro);
+    margin-bottom: 15px;
+}
+
+.form-footer {
+    margin-top: 30px;
+}
+
+.btn i {
+    margin-left: 8px;
+}
